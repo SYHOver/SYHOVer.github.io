@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Login</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="cotn_principal">
+    <h1 style="color: aliceblue;margin-top:80px;">欢迎来到博客</h1>
+    <div class="cont_centrar">
+      <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+            <div class="cont_ba_opcitiy">
+              <h2>登录</h2>
+              <p>点击进入登录界面</p>
+              <button class="btn-login" onClick="cambiar_login()">登录</button>
+            </div>
+          </div>
+          <div class="col_md_sign_up">
+            <div class="cont_ba_opcitiy">
+              <h2>注册</h2>
+              <p>点击进入注册界面</p>
+              <button class="btn_signup" onClick="cambiar_sign_up()">注册</button>
+            </div>
+          </div>
+        </div>
+        <div class="cont_back_info">
+          <div class="cont_img_back_grey"> <img src="po.jpg" alt="" /> </div>
+        </div>
+
+
+
+        <div class="cont_forms">
+          <div class="cont_img_back_"> <img src="po.jpg" alt="" /> </div>
+          <div class="cont_form_login"> <a href="#" onClick="ocultar_login_sign_up()">关闭</a>
+            <h2>登录</h2>
+            <input type="text" class="id" placeholder="账号" />
+            <input type="password" class="password" placeholder="密码" />
+            <button class="btn_login">登录</button>
+          </div>
+
+
+          <div class="cont_form_sign_up"> <a href="#" onClick="ocultar_login_sign_up()">关闭 </a>
+            <h2>注册</h2>
+            <input type="text" class="name" placeholder="账号" />
+            <input type="password" class="pass" placeholder="密码" />
+            <input type="confirmpassword" class="pass" placeholder="再次输入密码" />
+            <input type="text" class="protection" placeholder="密保问题" />
+            <input type="email" class="age" placeholder="邮箱" />
+ 
+          
+            <button class="btn_sign_up" onClick="cambiar_sign_up()">注册</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+  <div style="text-align:center;">
+  </div>
+  <script src="../api/JQery.js"></script>
+</body>
+
+
+<script>
+
+   const ip = "192.168.1.78:8081";
+
+  $(".btn_login").click(function () {
+    window.location.href='../../home/home.html';
+  });
+
+  $(".btn_sign_up").click(function () {
+  
+  });
+</script>
+
+
+</html>
